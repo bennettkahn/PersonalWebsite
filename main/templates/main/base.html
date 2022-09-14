@@ -1,0 +1,41 @@
+{% load static %}
+{% load active_link_tags %}
+
+<!DOCTYPE html>
+
+<html style = "background: none;">
+
+	<head>
+		<meta charset="UTF-8">
+		<!-- Favicon-->
+		<link rel="shortcut icon" type="image/png" href="{% static 'assets/img/favicon.ico' %}" />
+	  
+		<!-- Import stylesheet... -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+
+	</head>
+
+	<body>
+		<!-- Navbar stuff -->
+		<div class="header">
+			<div class="navbar-ul">
+				<li class="navbar-item"><a href="{% url 'main:projects' %}" class="{% active_link 'main:projects'%}"><strong>Projects</strong></a></li>
+
+				<li class="navbar-item"><a href="{% url 'main:home' %}" class="{% active_link 'main:home'%}"><strong>Home</strong></a></li>
+
+				
+			</div>
+		</div>
+
+		{% block content %} {% endblock %}
+
+
+</html>

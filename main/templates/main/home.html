@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% extends "./base.html" %}
+{% load static %}
+{% load active_link_tags %}
+
+<html style = "background: none;">
+	{% block content %}
+	<div class="content">
+		<div class="top">
+
+			<div class="top-left">
+
+				<div class="bio-info">
+
+					<table class="bio-table">
+						<tr>
+							<th> Name </th>
+							<td> Bennett Kahn </td>
+						</tr>
+						<tr>
+							<th> School </th>
+							<td> Tulane University </td>
+						</tr>
+						<tr>
+							<th> Degree </th>
+							<td> Bachelor's of Science </td>
+						</tr>
+						<tr>
+							<th> Majors </th>
+							<td> Math, Computer Science </td>
+						</tr>
+						<tr>
+							<th> Graduation </th>
+							<td> May, 2023 </td>
+						</tr>
+					</table>
+
+					
+				</div>
+
+				<div class="social-grid">
+
+
+					<div class="social first-social animate pop">
+						<div class="social-icon-photo-div">
+							<a href="https://github.com/bennettkahn"><img class="social-icon-photo" src="{% static 'assets/img/SocialIcons/github.png' %}"></a>
+						</div>
+					</div>
+
+					<div class="social second-social animate pop">
+						<div class="social-icon-photo-div">
+							<a href="https://github.com/bennettkahn"><img class="social-icon-photo" src="{% static 'assets/img/SocialIcons/linkedin.png' %}"></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="picture-social-container">
+
+				<img class="main-headshot" src="{% static 'assets/img/headshot-1.png' %}" alt="Headshot">
+
+			</div>
+		</div>
+
+		<div class="main-home-text center-content"> My name is Bennett Kahn. I am currently a senior at Tulane University, double majoring in math and computer science. I am looking for jobs! </div>
+
+		<div class="resume-container center-content">
+			<h2 class="center-content"> Check out or download my resume! </h2>
+			<iframe id="resume-iframe" class="center-content" src="{% static 'assets/files/Resume_BKahn.pdf' %}"></iframe>
+		</div>
+
+	</div class="content">
+	{% endblock %}
+</html>
