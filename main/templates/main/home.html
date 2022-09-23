@@ -63,12 +63,18 @@
 			</div>
 		</div>
 
-		<div class="main-home-text center-content"> My name is Bennett Kahn. I am currently a senior at Tulane University, double majoring in math and computer science. I am looking for jobs! </div>
+		<div class="main-home-text center-content"> 
+			<p> I am currently a senior at Tulane University, in search of a company at which I can apply the theoretical and practical skillset I have developed over the last several years. Having conducted graduate level research in cybersecurity and machine learning, I am a unique undergraduate candidate. </p>
+
+			<p> I possess the programming expertise to work with a team building robust software and the analytical toolset to effectively analyze data. I am a creative, out-of-the-box thinker with the technical skills to implement those ideas. I am eager to join an organization of passionate, hard-working individuals.</p>
+		</div>
 
 		<div class="resume-container center-content">
-			<h2 class="center-content"> Check out or download my resume! </h2>
+			<h2 class="center-content"> Check out or <a href="{% static 'assets/files/Resume_BKahn.pdf' %}" download>download my resume! </a></h2>
+			
 			<iframe id="resume-iframe" class="center-content" src="{% static 'assets/files/Resume_BKahn.pdf' %}"></iframe>
 		</div>
+
 
 	</div class="content">
 	{% endblock %}
