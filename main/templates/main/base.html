@@ -27,9 +27,19 @@
 		<!-- Navbar stuff -->
 		<div class="header">
 			<div class="navbar-ul">
-				<li class="navbar-item"><a href="{% url 'main:projects' %}" class="{% active_link 'main:projects'%}"><strong>Projects</strong></a></li>
+				<li id="projects-item" class="navbar-item">
+					<a class="main-page-link {% active_link 'main:projects'%}"><strong>Projects</strong></a>
+					<div id="projects-item-dropdown">
+						<a href="{% url 'main:tulane' %}" class="main-page-link {% active_link 'main:tulane'%}"><strong>Tulane</strong></a>
+						<a href="{% url 'main:professional' %}" class="main-page-link {% active_link 'main:professional'%}"><strong>Professional</strong></a>
+						<a href="{% url 'main:hobby' %}" class="main-page-link {% active_link 'main:hobby'%}"><strong>Hobby</strong></a>
+						<a href="{% url 'main:extracurricular' %}" class="main-page-link {% active_link 'main:extracurricular'%}"><strong>Extracurricular</strong></a>
+					</div>
+				</li>
 
-				<li class="navbar-item"><a href="{% url 'main:home' %}" class="{% active_link 'main:home'%}"><strong>Home</strong></a></li>
+				<li class="navbar-item">
+					<a href="{% url 'main:home' %}" class="main-page-link {% active_link 'main:home'%}"><strong>Home</strong></a>
+				</li>
 
 				
 			</div>

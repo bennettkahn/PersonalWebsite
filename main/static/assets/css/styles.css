@@ -19,9 +19,9 @@ body {
 
 
 .header {
-	overflow: hidden;
+	overflow: visible;
 	padding: 28px 10px;
-	z-index: 0;
+	z-index: 150;
 }
 
 
@@ -30,44 +30,78 @@ body {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	overflow: visible;
 	background-color: var(--gray);
 	position: fixed;
 	width: 100%;
 	top: 0;
 	left: 0;
-	z-index: 100;
-	height: 55px;
 }
 
 /* Format navbar-link text */
-.navbar-ul li a {
+.navbar-ul .main-page-link {
 	display: block;
 	color: white;
-	height: 100%;
 	text-align: center;
-	padding: 14px;    /* Had 16px as second argument before... */
+	padding-top: 14px;    /* Had 16px as second argument before... */
 	text-decoration: none;
 }
 
 /* Change navbar button to vibrant blue on hover */
-.navbar-item a:hover {
+.navbar-item:hover {
 	background-color: var(--blue_hover);
 	color: var(--gray);
+	height: 55px !important;
+	cursor: pointer;
 }
 
 /* Change navbar button to vibrant blue on hover */
 .active {
 	background-color: var(--blue_hover) !important;
 	color: var(--gray) !important;
+	height: 41px !important;
 }
 
 .navbar-item {
 	float: right;
 	width: 12%;
-	height: 100%;
+	height: 55px;
 	font-size: 16px;
 	text-align: center;
+}
+
+#projects-item {
+	position: relative;
+	display: inline-block;
+}
+
+#projects-item-dropdown {
+	display: none;
+	position: absolute;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 110;
+  margin-top: 14px;
+}
+
+#projects-item-dropdown a {
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	color: white;
+	background-color: var(--gray);
+}
+
+#projects-item-dropdown a:hover {
+	background-color: var(--blue_hover);
+	color: var(--gray) !important;
+	cursor: pointer;
+
+}
+
+#projects-item:hover #projects-item-dropdown {
+	display: block;
+
 }
 
 /* Main content class */
@@ -97,18 +131,22 @@ body {
 	float: left;
 	margin: 10px;
 	width: 30%;
-	z-index: 2;
+	z-index: 105;
 }
 
 .bio-info {
 	display: block;
 	margin: 0px;
-	font-size: 1.18vw;
+	font-size: 1.3vw;
+	margin-left: 30px !important;
+	z-index: 106;
 
 }
 
 .bio-table {
+	z-index: 107;
 	display: block;
+	text-align: left;
 	margin-top: 40px;
 	margin-bottom: 10px;
 	color: white;
@@ -122,6 +160,14 @@ body {
 		blink-caret .75s step-end infinite;
 }
 
+.bio-table td {
+	padding-left: 20px;
+}
+
+.bio-table tr {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 
 .social-grid {
 	position: relative;
@@ -148,7 +194,7 @@ body {
 .social-icon-photo {
 	display: block;
 	margin: 2px auto 2px auto;
-	width: 55%;
+	width: 30%;
 }
 
 .animate {
@@ -173,7 +219,7 @@ body {
 .picture-social-container {
 	display: block;
 	margin: 2px auto 0px auto;
-	width: 30%;
+	width: 24%;
 	z-index: 1;
 }
 
@@ -182,7 +228,7 @@ body {
 	position: relative;
 	margin: 12px auto -10px auto;
 	width: 100%;
-	opacity: .8;
+	opacity: .92;
 	transition: all .5s ease-in-out;
 	z-index: 101;
 
@@ -210,8 +256,8 @@ div .main-home-text {
 	display: block;
 	position: relative;
 	vertical-align: middle;
-	width: 90%;
-	height: 300px;
+	width: 60%;
+	height: 600px;
 	margin: 20px auto 20px auto;
 	padding: 10px;
 	transition: all .5s ease-in-out;

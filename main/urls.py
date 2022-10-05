@@ -8,7 +8,10 @@ urlpatterns = [
 	path('admin/', admin.site.urls),
 	path('', views.home, name='index'),
 	path('home/', views.home, name='home'),
-	path('projects/', views.projects, name='projects'),
+	path('tulane/', views.tulane, name='tulane'),
+	path('hobby/', views.hobby, name='hobby'),
+	path('professional/', views.professional, name='professional'),
+	path('extracurricular/', views.extracurricular, name='extracurricular'),
 
 ]
 

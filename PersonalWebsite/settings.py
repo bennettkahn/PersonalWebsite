@@ -69,6 +69,7 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'PersonalWebsite.wsgi.application'
 
 
@@ -82,11 +83,9 @@ DATABASES = {
     },
     "bk_local": {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-
         'NAME': 'portfolio',
         'USER': 'bennett',
         'PASSWORD': 'django_tut_you_cant_guess123',
-
         'HOST': 'localhost',
         'PORT': '5432',
     }

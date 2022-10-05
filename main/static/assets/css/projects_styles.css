@@ -3,7 +3,7 @@
 }
 
 #pursuit-top {
-	height: 200px;
+	height: 130px;
 	background-color: var(--silver);
 }
 
@@ -136,11 +136,18 @@
 
 .project {
 	width: auto;
-	background-color: var(--gray);
+	background-color: var(--darker_blue);
 	transition: all .1s ease-in-out;
 	border-radius: 10px;
-	opacity: 0;
 	display: block;
+}
+
+.project:hover {
+	cursor: pointer;
+}
+
+.blue-hover {
+	background-color: var(--blue_hover) !important;
 }
 
 .project h3 {

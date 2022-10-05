@@ -16,5 +16,16 @@ class ProjectsView(TemplateView):
 def home(request):
     return render(request, 'main/home.html')
 
-def projects(request):
-    return render(request, 'main/projects.html')
+def tulane(request):
+    return render(request, 'main/tulane.html')
+
+
+def hobby(request):
+    return render(request, 'main/hobby.html')
+
+
+def professional(request):
+    return render(request, 'main/professional.html')
+
+def extracurricular(request):
+    return render(request, 'main/extracurricular.html')
