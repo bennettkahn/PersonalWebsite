@@ -27,7 +27,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("main.urls")),
     #path('', include("django.contrib.auth.urls"))
-    path('sitemap.xml', sitemap, # new
-        {'sitemaps': {'main': GenericSitemap(info_dict, priority=0.6)}},
-        name='django.contrib.sitemaps.views.sitemap'),
+    
 ]

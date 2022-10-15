@@ -7,6 +7,7 @@ app_name = 'main'
 urlpatterns = [
 	path('admin/', admin.site.urls),
 	path('', views.home, name='index'),
+	path('sitemap.xml/', views.sitemap, name='sitemap'),
 	path('home/', views.home, name='home'),
 	path('tulane/', views.tulane, name='tulane'),
 	path('hobby/', views.hobby, name='hobby'),

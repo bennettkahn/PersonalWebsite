@@ -29,3 +29,6 @@ def professional(request):
 
 def extracurricular(request):
     return render(request, 'main/extracurricular.html')
+
+def sitemap(request):
+    return render(request, 'main/sitemap.xml')
