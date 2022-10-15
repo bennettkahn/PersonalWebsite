@@ -16,7 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.sitemaps import GenericSitemap # new
-from django.contrib.sitemaps.views import sitemap # new
+from django.contrib.sitemaps.views import sitemap # new'
+from main.models import PlaceHolder
+
+info_dict = {
+    'queryset': PlaceHolder.objects.all()
+}
 
 urlpatterns = [
     path('admin/', admin.site.urls),
