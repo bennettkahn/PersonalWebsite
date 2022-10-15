@@ -47,7 +47,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'active_link',
-    'django_extensions'
+    'django_extensions',
+    'django.contrib.sites', # new
+    'django.contrib.sitemaps', # new 
 ]
 
 MIDDLEWARE = [
