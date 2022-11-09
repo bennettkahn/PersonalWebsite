@@ -134,6 +134,7 @@
 	row-gap: 3%;
 	background-color: var(--silver);
 	border-radius: 20px;
+	padding-bottom: 40px;
 
 }
 
@@ -147,6 +148,8 @@
 	transition: all .1s ease-in-out;
 	border-radius: 10px;
 	display: block;
+	margin-bottom: 10px;
+	min-width: 80px;
 }
 
 .project:hover {
@@ -162,7 +165,7 @@
 	text-align: center;
 	margin-right:3px;
 	margin-left: 3px;
-	font-size: 15px;
+	font-size: 5vw;
 }
 
 .opaque {
