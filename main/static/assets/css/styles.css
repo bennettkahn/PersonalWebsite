@@ -63,7 +63,7 @@ footer p {
 .navbar-item {
 	float: right;
 	width: 20%;
-	font-size: 16px;
+	font-size: 12px;
 	height: 55px !important;
 	text-align: center;
 }
@@ -92,10 +92,11 @@ footer p {
 #projects-item-dropdown {
 	display: none;
 	position: absolute;
-	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 110;
-  margin-top: 14px;
+  margin-top: 25px;
+  font-size: 10px;
+  width: 20vw;
 }
 
 #projects-item-dropdown a {
@@ -151,7 +152,7 @@ footer p {
 .bio-info {
 	display: block;
 	margin: 0px;
-	font-size: 1.3vw;
+	font-size: 1vw;
 	margin-left: 30px !important;
 	z-index: 106;
 
@@ -168,7 +169,7 @@ footer p {
 	border-right: .15em solid rgb(49, 159, 36); /* The typwriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-	letter-spacing: .15em; /* Adjust as needed */
+	letter-spacing: .1em; /* Adjust as needed */
 	animation: 
 		typing 2s steps(40, end),
 		blink-caret .75s step-end infinite;
