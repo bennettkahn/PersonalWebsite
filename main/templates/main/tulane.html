@@ -25,6 +25,12 @@
 			<h1> Projects </h1>
 
 			<div id="projects-container">
+
+				<div class="project school-project" id="thesis-proj">
+					<h3> Undergraduate Honors Thesis in Formal Verification </h3>
+				</div>
+
+				
 				<div class="project school-project" id="cwn-proj">
 					<h3> Court Watch Nola <br> Data Dashboard </h3>
 				</div>
@@ -36,6 +42,8 @@
 				<div class="project school-project" id="dreamcatcher-proj">
 					<h3> DreamCatcher Website </h3>
 				</div>
+
+				
 
 			</div>
 		</div>
@@ -99,6 +107,14 @@
 
 				</div>
 
+				<div class="project-about-div" id="thesis-about">
+					<h3> Description: </h3>
+					<div class="main-about-text">
+						<p>  I am currently writing a joint math/computer science <a href="https://enrichment.tulane.edu/senior-honors-thesis">undergraduate honors thesis</a> concerning the use of formal methods applied to Programmable Logic Controllers (PLC). Specifically, I am using theorem proving techniques, a type of formal verification, to prove/disprove whether or not certain safety properties hold in Structured Text (ST) programs (a language for programming PLCs). </p>
+					</div>
+
+				</div>
+
 				
 			</div>
 
@@ -140,6 +156,14 @@
 			$("#about-div").find("div.project-about-div").hide(); // hide all project abouts
 			$("#dreamcatcher-about").show();
 			$("#dreamcatcher-proj").addClass("blue-hover");
+
+		});
+
+		$("#thesis-proj").click(function () {
+			$("div.project").removeClass("blue-hover");
+			$("#about-div").find("div.project-about-div").hide(); // hide all project abouts
+			$("#thesis-about").show();
+			$("#thesis-proj").addClass("blue-hover");
 
 		});
 
